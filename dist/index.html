@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div id="topView">
+      <div id="weatherSummary">
+        <h1 id="location" class="largeText"></h1>
+        <ul>
+          <li id="date" class="mediumText"></li>
+          <li id="time" class="mediumText"></li>
+          <li id="summary">
+            <div>
+              <img class="iconLarge" />
+              <div>
+                <div id="condition" class="largeText"></div>
+                <div id="temp" class="largerText"></div>
+              </div>
+            </div>
+            <button id="tempScaleButton"></button>
+          </li>
+        </ul>
+      </div>
+      <div id="locationSearch">
+        <div>
+          <form class="bottomAlign">
+            <input
+              type="text"
+              id="searchBar"
+              class="mediumText"
+              placeholder="Search Location"
+              required
+            />
+            <input type="submit" value="" />
+          </form>
+          <p class="error"></p>
+        </div>
+      </div>
+      <div id="weatherStats" class="mediumText">
+        <dl>
+          <div>
+            <img class="iconSmall" />
+            <div>
+              <dt>Feels Like</dt>
+              <dd id="feelsLikeTemp"></dd>
+            </div>
+          </div>
+          <div>
+            <img class="iconSmall" />
+            <div>
+              <dt>Chance of Rain</dt>
+              <dd id="rainChance"></dd>
+            </div>
+          </div>
+          <div>
+            <img class="iconSmall" />
+            <div>
+              <dt>Humidity</dt>
+              <dd id="humidity"></dd>
+            </div>
+          </div>
+          <div>
+            <img class="iconSmall" />
+            <div>
+              <dt>Wind</dt>
+              <dd id="wind"></dd>
+            </div>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <div id="bottomView"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

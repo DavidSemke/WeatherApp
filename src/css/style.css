@@ -1,0 +1,167 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/backgrounds/day.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin: 0;
+}
+
+button {
+  background: none;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+dd {
+  margin-bottom: 10px;
+}
+
+dt {
+  margin-right: 10px;
+}
+
+dt::after {
+  content: ":";
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bottomAlign {
+  display: flex;
+  align-items: flex-end;
+}
+
+.error {
+  color: red;
+}
+
+.iconSmall {
+  width: 40px;
+  height: 40px;
+}
+
+.iconMedium {
+  width: 60px;
+  height: 60px;
+}
+
+.iconLarge {
+  width: 100px;
+  height: 100px;
+}
+
+.largeText {
+  font-size: 2em;
+}
+
+.largerText {
+  font-size: 3em;
+}
+
+.maxMinDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.mediumText {
+  font-size: 1.4em;
+}
+
+#bottomView {
+  flex: 1;
+}
+
+#bottomView li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bottomView li:first-child {
+  border: 2px solid white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+#bottomView > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#locationSearch {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 80%;
+}
+
+#locationSearch input {
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+#locationSearch input[type="submit"] {
+  background: url("../images/icons/searchIcon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+#locationSearch input[type="text"] {
+  background: none;
+  color: white;
+}
+
+#summary {
+  margin-top: 20px;
+}
+
+#summary > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#tempScaleButton {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+#topView {
+  flex: 1;
+  display: flex;
+  padding: 20px;
+}
+
+#topView > div {
+  flex: 1;
+}
+
+#weatherStats {
+  display: flex;
+  justify-content: right;
+}
+
+#weatherStats > dl > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
